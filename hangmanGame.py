@@ -65,7 +65,7 @@ def playingGame(word):
         print(Fore.YELLOW + "Sorry, you ran out of guesses. The word was " + word + ". Try again!")
 
 
-def hangmanBodyParts(tries):
+def hangmanBodyParts(attempt):
     body_parts = [
 
                 """
@@ -151,7 +151,7 @@ def hangmanBodyParts(tries):
                    -
                 """
     ]
-    return body_parts[tries]
+    return body_parts[attempt]
 
 
 def body():
